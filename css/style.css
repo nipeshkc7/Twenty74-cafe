@@ -1,10 +1,3 @@
-/*
-    Theme Name: Delicious
-    Theme URL: https://bootstrapmade.com/delicious-free-restaurant-bootstrap-theme/
-    Author: BootstrapMade.com
-    Author URL: https://bootstrapmade.com
-*/
-
 body {
 	font-size: 15px;
     line-height: 1.52;
@@ -14,18 +7,9 @@ body {
     font-weight: 400;
     overflow-x: hidden;
 }
-/*nav {
-  .navbar-brand {font-size: 130px;}
-    .navbar-toggle {margin: 13px 15px 13px 0;}
-    a {
-        font-size: 18px;
-        padding-bottom: 20px !important;
-        padding-top: 20px !important;
-    transition: all 0.3s ease;
-    }
-}
-*/
+
 #mainNav{
+    height:80px;
     border-width: 0px;
     -webkit-box-shadow: 0px 0px;
     box-shadow: 0px 0px;
@@ -33,22 +17,39 @@ body {
     background-image: -webkit-gradient(linear, 50.00% 0.00%, 50.00% 100.00%, color-stop( 0% , rgba(0,0,0,0.00)),color-stop( 100% , rgba(0,0,0,0.00)));
     background-image: -webkit-linear-gradient(270deg,rgba(0,0,0,0.00) 0%,rgba(0,0,0,0.00) 100%);
     background-image: linear-gradient(180deg,rgba(0,0,0,0.00) 0%,rgba(0,0,0,0.00) 100%);
+    transition: all 0.5s ease;
 }
+
+.otherPages{
+  margin-top:10px;
+}
+
+
 nav .navbar-brand{
     font-size:30px;
+}
+
+nav .navbar-brand img{
+    height: 40px;
 }
 
 nav .navbar-toggle { margin: 13px 15px 13px 0; }
 
 nav a{
-    font-size: 18px;
+        font-size: 18px;
         padding-bottom: 20px !important;
         padding-top: 20px !important;
-    transition: all 0.3s ease;
+        transition: all 0.5s ease;
 }
 
 nav.navbar.shrink{
-    min-height: 35px;
+    height:30px;
+    min-height: 25px;
+}
+
+#mainNav.shrink{
+    
+    height:60px;
 }
 nav.navbar.shrink .navbar-brand{
     font-size:25px;
@@ -98,6 +99,8 @@ table {
     color: #fcfcfc;
     font-size: 34px;
 }
+
+
 .section-padding{
     padding: 60px 0px;
 }
@@ -380,7 +383,7 @@ table {
 .menu-restaurant{
     width: 50%;
     float: left;
-    padding: 15px;
+    padding: 25px;                  /*Padding has been changed*/
     position: relative;
 }
 .menu-restaurant .menu-title {
@@ -393,7 +396,7 @@ table {
 .menu-restaurant .menu-line {
     position: absolute;
     bottom: 6px;
-    border-bottom: 1px dotted rgba(0,0,0,.3);
+    border-bottom: 0px dotted rgba(0,0,0,.3);
     margin-left: .6rem;
     margin-right: .6rem;
 }
@@ -404,11 +407,13 @@ table {
     top: 0;
 }
 .menu-restaurant .menu-subtitle {
+    position:absolute;                      /* Position has been changed to absolute*/
+    margin-right: 60px;
     display: block;
     float: left;
     color: #B1B1B1;
     font-family: Satisfy,'Open Sans',arial;
-    font-size: 1.2rem;
+    font-size: 1.5rem;
 }
 .menu-restaurant span.clearfix {
     position: relative;
@@ -476,7 +481,7 @@ table {
 .list-horizontal li {
     display: inline-block;
 }
-#contact{
+#map-section{
     background-color: rgba(221, 221, 221, 0.33);
 }
 .footer .social-list a {
@@ -527,12 +532,7 @@ table {
     .sidenav a {font-size: 18px;}
 }
 
-.transp-img{
-    border-width: 0px;
-    -webkit-box-shadow: 0px 0px;
-    box-shadow: 0px 0px;
-    background-color: rgba(0,0,0,0.0);
-    background-image: -webkit-gradient(linear, 50.00% 0.00%, 50.00% 100.00%, color-stop( 0% , rgba(0,0,0,0.00)),color-stop( 100% , rgba(0,0,0,0.50)));
-    background-image: -webkit-linear-gradient(270deg,rgba(0,0,0,0.00) 0%,rgba(0,0,0,0.00) 100%);
-    background-image: linear-gradient(180deg,rgba(0,0,0,0.00) 0%,rgba(0,0,0,0.00) 100%);
+.banner-text{
+    margin-top:140px;
 }
+
