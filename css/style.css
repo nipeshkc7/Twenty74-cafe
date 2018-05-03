@@ -86,8 +86,12 @@ table {
     min-height: 630px;
 }
 .bg-color{
-    background-color: RGBA(0, 0, 0, 0.61);
+    background-color: RGBA(0, 0, 0, 0.40);
     min-height: 630px;
+}
+.bg-color2{
+    background-color: RGBA(0, 0, 0, 0.40);
+    min-height: 230px;
 }
 #banner h2{
     font-family: 'Satisfy', sans-serif;
@@ -296,7 +300,7 @@ table {
     display:block;
 }
 
-.phone-in-talk, .hour-icon
+.phone-in-talk, .hour-icon, .dinner-icon
 {
     font-size: 35px;
     line-height: 70px;
@@ -325,8 +329,11 @@ table {
     border-radius: 2px;
 }
 #event{
-    background: url('../img/banner-bg1.jpg') no-repeat;
+    /*//background: url('../img/banner-bg1.jpg') no-repeat;
+    */
+    background-color:#4C3232;
     background-size: cover;
+
 }
 .left-images img {
     height: 308px;
@@ -337,6 +344,7 @@ table {
 }
 .details-text {
     border-right: 2px solid #841b2d;
+    text-align:center;
 }
 .details-text {
     background-color: rgba(14, 4, 4, 0.70);
