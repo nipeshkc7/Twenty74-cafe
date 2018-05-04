@@ -544,3 +544,18 @@ table {
     margin-top:140px;
 }
 
+.thumbnail img{
+    height:200px;
+}
+
+.gallery-image{
+    max-height:460px;
+    max-width:500px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  /*  margin-left: auto;
+    margin-right: auto;
+    display: block;
+*/}
+
