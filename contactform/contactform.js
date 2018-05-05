@@ -13,7 +13,6 @@ jQuery(document).ready(function($) {
         var regex = /^([a-zA-Z0-9_.+-])+\@(([a-zA-Z0-9-])+\.)+([a-zA-Z0-9]{2,4})+$/;
         if(regex.test(email) && name.length>4 && message.length>5){
             //alert('valid email id');
-            alert("sending");
              $.ajax({
                 type: "POST",
                 url: "contactform/contactform.php",
@@ -21,7 +20,8 @@ jQuery(document).ready(function($) {
                 success: function(msg){
                    // alert(msg);
                     if(msg == 'OK') {
-                        $("#sendmessage").addClass("show");         
+                        $("#sendmessage").addClass("show"); 
+                        $(".contactForm").addClass("hide");          
                         $("#errormessage").removeClass("show"); 
                     }
                     else {

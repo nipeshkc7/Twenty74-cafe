@@ -6,7 +6,9 @@ if($_POST){
     $message = $_POST['message'];
 
 //send email
-    mail("janak@twenty74.com.au", "Feedback from" .$email, $message);
+    mail("janak@twenty74.com.au", "Feedback from " .$email, $message);
+
+    echo 'OK';
 }
 
 ?>
