@@ -13,11 +13,19 @@ body {
     border-width: 0px;
     -webkit-box-shadow: 0px 0px;
     box-shadow: 0px 0px;
-    background-color: rgba(0,0,0,0.2);
+    background-color: rgba(0,0,0,0.1);
     background-image: -webkit-gradient(linear, 50.00% 0.00%, 50.00% 100.00%, color-stop( 0% , rgba(0,0,0,0.00)),color-stop( 100% , rgba(0,0,0,0.00)));
     background-image: -webkit-linear-gradient(270deg,rgba(0,0,0,0.00) 0%,rgba(0,0,0,0.00) 100%);
     background-image: linear-gradient(180deg,rgba(0,0,0,0.00) 0%,rgba(0,0,0,0.00) 100%);
     transition: all 0.5s ease;
+
+}
+#mainNav a{
+    color:white;
+}
+
+#mainNav a:hover{
+    color:gray;
 }
 
 .otherPages{
@@ -86,7 +94,7 @@ table {
     min-height: 630px;
 }
 .bg-color{
-    background-color: RGBA(0, 0, 0, 0.40);
+    background-color: RGBA(0, 0, 0, 0.15);
     min-height: 630px;
 }
 .bg-color2{
@@ -111,7 +119,7 @@ table {
 .logo-name{
     font-family: 'Satisfy', sans-serif;
     font-size: 65px;
-    margin-top: 140px;
+    margin-top: 160px;
     color: #EAD94C;
 }
 .sidenav {
@@ -391,7 +399,8 @@ table {
 .menu-restaurant{
     width: 50%;
     float: left;
-    padding: 25px;                  /*Padding has been changed*/
+    padding: 30px;                  /*Padding has been changed*/
+    margin-top: 30px;
     position: relative;
 }
 .menu-restaurant .menu-title {
@@ -426,6 +435,17 @@ table {
 .menu-restaurant span.clearfix {
     position: relative;
     display: block;
+}
+
+.section-divider{
+    padding-bottom:0;
+    margin-bottom:0;
+    text-align: center;
+    text-decoration: underline;
+    width:100%;
+    font-size:25px;
+    font-family:'Satisfy';
+    font-weight: 700;
 }
 
 #menu-flters ul li a.active, #menu-flters ul li a:hover {
