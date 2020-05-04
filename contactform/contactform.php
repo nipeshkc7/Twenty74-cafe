@@ -7,7 +7,7 @@ if($_POST){
     $phone= $_POST['phone'];
 
 //send email
-    mail("Twenty74cafe@gmail.com", "Feedback from " .$name ." : ".$email , $message ."  \n\n Contact number: ". $phone);
+    mail("nipeshkc7@gmail.com", "Feedback from " .$name ." : ".$email , $message ."  \n\n Contact number: ". $phone);
 
     echo 'OK';
 }
