@@ -8,6 +8,7 @@ jQuery(document).ready(function($) {
         var name= $('#name').val();
         var message=$('#message').val();
         var phone=$('#phone').val();
+        console.log('submitting form');
 
         var str=$("form").serialize();
         var regex = /^([a-zA-Z0-9_.+-])+\@(([a-zA-Z0-9-])+\.)+([a-zA-Z0-9]{2,4})+$/;
