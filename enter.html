@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -23,6 +22,11 @@
 
       .container {
         text-align: center;
+      }
+
+      .logo {
+        width: 200px;
+        margin-bottom: 30px;
       }
 
       h1 {
@@ -51,13 +55,35 @@
         background-color: #ffffff; /* White */
         color: #333333; /* Dark Gray */
       }
+
+      @media (max-width: 768px) {
+        .logo {
+          width: 150px;
+        }
+        h1 {
+          font-size: 24px;
+          margin-bottom: 20px;
+        }
+        .btn {
+          padding: 12px 20px;
+          font-size: 16px;
+          display: block; /* Make buttons stack on top of each other */
+          width: 80%; /* Adjust width to fit container */
+          margin: 10px auto; /* Center horizontally */
+        }
+      }
     </style>
   </head>
   <body>
     <div class="container">
-      <h1>Welcome to Twenty74</h1>
-      <a href="cafe.html" class="btn">Visit Cafe Website</a>
-      <a href="bar_and_grill.html" class="btn">Visit Bar & Grill Website</a>
+      <img
+        src="https://twenty74-bar-and-grill-ef031.stackbit.app/images/mainlogo.png"
+        alt="Twenty74 Logo"
+        class="logo"
+      />
+      <h1>Indulge in Culinary Excellence.</h1>
+      <a href="/cafe" class="btn">Visit Cafe Website</a>
+      <a href="" class="btn">Visit Bar & Grill Website (Coming Soon)</a>
     </div>
   </body>
 </html>
