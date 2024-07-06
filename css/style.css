@@ -423,6 +423,10 @@ table {
     right: 0;
     top: 0;
 }
+
+.menu-price{
+    display: none;
+}
 .menu-restaurant .menu-subtitle {
     position:absolute;                      /* Position has been changed to absolute*/
     margin-right: 60px;
