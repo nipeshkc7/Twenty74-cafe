@@ -5,18 +5,23 @@
   <style>
     body {
       font-family: "Roboto", sans-serif;
-        margin: 0;
-        padding: 0;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 100vh;    }
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      /* background-image: url("img/galleryimg8.jpg");
+      background-repeat: no-repeat;
+      background-size: cover; */
+    }
     
     .container {
       max-width: 800px;
       margin: 0 auto;
       padding: 20px;
       text-align: center;
+      background-color: rgba(255, 255, 255, 0.8);
     }
     
     h1 {
@@ -36,6 +41,7 @@
       box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
       cursor: pointer;
     }
+    
     .option:hover,
     .option.clicked {
       transform: scale(1.1);
@@ -47,7 +53,7 @@
   <div class="container">
     <h1>Welcome to Twenty74 Cafe</h1>
     <div class="option">
-      <a href="/cafe">
+      <a href="./cafe.html">
         <img src="img/logox.png" alt="Cafe" onclick="this.parentNode.classList.toggle('clicked')">
       </a>
       <h2>Visit our Cafe</h2>
