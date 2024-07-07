@@ -1,69 +1,78 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>Welcome to Twenty74</title>
-  <style>
-    body {
-      font-family: "Roboto", sans-serif;
-      margin: 0;
-      padding: 0;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
-      /* background-image: url("img/galleryimg8.jpg");
-      background-repeat: no-repeat;
-      background-size: cover; */
-    }
-    
-    .container {
-      max-width: 800px;
-      margin: 0 auto;
-      padding: 20px;
-      text-align: center;
-      background-color: rgba(255, 255, 255, 0.8);
-    }
-    
-    h1 {
-      color: #333;
-    }
-    
-    .option {
-      display: inline-block;
-      margin: 10px;
-    }
-    
-    .option img {
-      width: 200px;
-      height: 200px;
-      border-radius: 50%;
-      object-fit: cover;
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-      cursor: pointer;
-    }
-    
-    .option:hover,
-    .option.clicked {
-      transform: scale(1.1);
-      transition: transform 0.3s ease;
-    }
-  </style>
-</head>
-<body>
-  <div class="container">
-    <h1>Welcome to Twenty74</h1>
-    <div class="option">
-      <a href="./cafe.html">
-        <img src="img/logox.png" alt="Cafe" onclick="this.parentNode.classList.toggle('clicked')">
-      </a>
-      <h2>Visit our Cafe</h2>
+  <head>
+    <title>Welcome to Twenty74</title>
+    <style>
+      body {
+        font-family: "Roboto", sans-serif;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        @media (min-width: 0em) and (max-width: 1000px) {
+          height: 50vh;
+        }
+      }
+
+      .container {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 20px;
+        text-align: center;
+        background-color: rgba(255, 255, 255, 0.8);
+      }
+
+      h1 {
+        color: #333;
+        font-size: 3em;
+      }
+
+      .option {
+        display: inline-block;
+        margin: 10px;
+      }
+
+      .option img {
+        width: 300px;
+        height: 300px;
+        border-radius: 50%;
+        object-fit: cover;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        cursor: pointer;
+      }
+
+      .option:hover,
+      .option.clicked {
+        transform: scale(1.1);
+        transition: transform 0.3s ease;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Welcome to Twenty74</h1>
+      <div class="option">
+        <a href="./cafe.html">
+          <img
+            src="img/logox.png"
+            alt="Cafe"
+            onclick="this.parentNode.classList.toggle('clicked')"
+          />
+        </a>
+        <h2>Visit our Cafe</h2>
+      </div>
+      <div class="option">
+        <a href="https://barandgrill.twenty74.com.au/">
+          <img
+            src="img/twentybar.png"
+            alt="Restaurant"
+            onclick="this.parentNode.classList.toggle('clicked')"
+          />
+        </a>
+        <h2>Visit our Restaurant</h2>
+      </div>
     </div>
-    <div class="option">
-      <a href="https://barandgrill.twenty74.com.au/">
-        <img src="img/twentybar.png" alt="Restaurant" onclick="this.parentNode.classList.toggle('clicked')">
-      </a>
-      <h2>Visit our Restaurant</h2>
-    </div>
-  </div>
-</body>
+  </body>
 </html>
